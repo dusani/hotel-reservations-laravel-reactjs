@@ -32,8 +32,7 @@ export default class RoomDetail extends Component {
                     </p>
                     <hr className="my-0" style={hlineStyle} />
                     <p className="text-center mt-0">
-                        <small>{roomDetail.price}</small>
-                        <small>USD</small>
+                        <small>{roomDetail.price} USD</small>
                     </p>
                 </div>
                 <div className="d-flex justify-content-between">

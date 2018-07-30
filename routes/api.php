@@ -25,3 +25,5 @@ Route::get('/hotel/{hotel}', 'HotelController@showHotel');
 
 // Show single room
 Route::get('/hotel/{hotel}/{room}', 'HotelController@showRoom');
+
+Route::post('/reservation', 'CustomerReservationController@store');

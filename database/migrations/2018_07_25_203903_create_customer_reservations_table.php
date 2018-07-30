@@ -17,14 +17,18 @@ class CreateCustomerReservationsTable extends Migration
             $table->increments('id');
             $table->integer('hotel_id');
             $table->integer('room_id');
-            $table->string('customer_name');
-            $table->text('customer_address');
+            $table->integer('room_price');
+            $table->integer('room_taxes');
+            $table->integer('room_total_price');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->text('address');
             $table->integer('phone_number');
-            $table->integer('cc_number');
+            $table->string('email');
+            $table->integer('credit_card');
             $table->integer('cc_exp_month');
             $table->integer('cc_exp_year');
             $table->integer('cc_cvv');
-            $table->text('cc_billing_address');
             $table->timestamps();
         });
     }
