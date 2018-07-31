@@ -14084,7 +14084,7 @@ module.exports = checkPropTypes;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(19);
-module.exports = __webpack_require__(61);
+module.exports = __webpack_require__(63);
 
 
 /***/ }),
@@ -55865,29 +55865,6 @@ var HotelsList = function (_Component) {
                 'div',
                 { className: 'container' },
                 _react2.default.createElement(
-                    'div',
-                    { className: 'input-group mb-5' },
-                    _react2.default.createElement('input', {
-                        type: 'text',
-                        className: 'form-control',
-                        placeholder: 'Search for hotels...'
-                    }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'input-group-append' },
-                        _react2.default.createElement(
-                            'button',
-                            { className: 'btn btn-outline-secondary' },
-                            'Search'
-                        ),
-                        _react2.default.createElement(
-                            'button',
-                            { className: 'btn btn-outline-secondary' },
-                            'Show All'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
                     'ul',
                     { className: 'list-group' },
                     hotels.map(function (hotel) {
@@ -56012,16 +55989,11 @@ var Hotel = function (_Component) {
                                 ' | '
                             )
                         ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            ' ',
-                            _react2.default.createElement(_reactStarRatingComponent2.default, {
-                                name: 'starRating',
-                                value: hotel.rating,
-                                editing: false
-                            })
-                        )
+                        _react2.default.createElement(_reactStarRatingComponent2.default, {
+                            name: 'starRating',
+                            value: hotel.rating,
+                            editing: false
+                        })
                     ),
                     _react2.default.createElement(
                         'p',
@@ -56108,7 +56080,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Room = __webpack_require__(66);
+var _Room = __webpack_require__(61);
 
 var _Room2 = _interopRequireDefault(_Room);
 
@@ -56156,16 +56128,6 @@ exports.default = ShowRooms;
 
 /***/ }),
 /* 61 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56181,7 +56143,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RoomDetail = __webpack_require__(67);
+var _RoomDetail = __webpack_require__(62);
 
 var _RoomDetail2 = _interopRequireDefault(_RoomDetail);
 
@@ -56311,7 +56273,7 @@ var Room = function (_Component) {
 exports.default = Room;
 
 /***/ }),
-/* 67 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56533,6 +56495,16 @@ var RoomDetail = function (_Component) {
 exports.default = RoomDetail;
 
 /***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 

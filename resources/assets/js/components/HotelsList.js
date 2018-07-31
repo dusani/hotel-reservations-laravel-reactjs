@@ -21,22 +21,6 @@ export default class HotelsList extends Component {
 
         return (
             <div className="container">
-                <div className="input-group mb-5">
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Search for hotels..."
-                    />
-                    <div className="input-group-append">
-                        <button className="btn btn-outline-secondary">
-                            Search
-                        </button>
-                        <button className="btn btn-outline-secondary">
-                            Show All
-                        </button>
-                    </div>
-                </div>
-
                 <ul className="list-group">
                     {hotels.map(hotel => {
                         return <Hotel hotel={hotel} key={hotel.id} />;

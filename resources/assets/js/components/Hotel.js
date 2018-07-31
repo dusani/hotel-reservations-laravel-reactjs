@@ -50,15 +50,11 @@ export default class Hotel extends Component {
                             {hotel.name}
                             <span className="text-secondary"> | </span>
                         </p>
-
-                        <p>
-                            {' '}
-                            <StarRating
-                                name="starRating"
-                                value={hotel.rating}
-                                editing={false}
-                            />
-                        </p>
+                        <StarRating
+                            name="starRating"
+                            value={hotel.rating}
+                            editing={false}
+                        />
                     </div>
                     <p className="text-muted mb-4">{hotel.address}</p>
                     <button
