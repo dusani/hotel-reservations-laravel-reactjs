@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import StarRating from 'react-star-rating-component';
 
 import ShowRooms from './ShowRooms';
 
@@ -41,10 +42,24 @@ export default class Hotel extends Component {
                     />
                 </div>
                 <div className="col-6">
-                    <p className="h4 text-primary mb-0" style={fontBoldStyle}>
-                        {hotel.name}
-                        <span className="text-secondary"> | </span>{' '}
-                    </p>
+                    <div className="d-flex">
+                        <p
+                            className="h4 text-primary mb-0 mr-1"
+                            style={fontBoldStyle}
+                        >
+                            {hotel.name}
+                            <span className="text-secondary"> | </span>
+                        </p>
+
+                        <p>
+                            {' '}
+                            <StarRating
+                                name="starRating"
+                                value={hotel.rating}
+                                editing={false}
+                            />
+                        </p>
+                    </div>
                     <p className="text-muted mb-4">{hotel.address}</p>
                     <button
                         onClick={this.toggleRoomsHandler}
